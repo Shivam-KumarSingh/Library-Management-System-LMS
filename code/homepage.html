@@ -1,1 +1,52 @@
+<?php
+session_start();
+include("connect.php");
 
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="username">
+        <p  style="font-size:30px ; font-weight:bold; color:white">
+         Hello  <?php 
+         if(isset($_SESSION['email'])){
+          $email=$_SESSION['email'];
+          $query=mysqli_query($conn, "SELECT users.* FROM `users` WHERE users.email='$email'");
+          while($row=mysqli_fetch_array($query)){
+              echo $row['firstName'].' '.$row['lastName'];
+          }
+         }
+         ?>
+        </p>
+      </div>
+      <a href="logout.php">Logout</a>
+    <div class="container" id="booksin" style="display: none;">
+        <button class="button" id="addbook">Add</button>
+        <button class="button" id="updatebook">Update</button>
+        <button class="button" id="deletebook">Delete</button>
+    </div>
+    <div class="container" id="studentsin" style="display: none;">
+        <button class="button" id="addstudent">Add</button>
+        <button class="button" id="removestudent">Remove</button>
+    </div>
+    <div class="container" id="issuein" style="display: none;">
+        <button class="button" id="searchbooks">Search</button>
+        <button class="button" id="issuebooks">Issue</button>
+        <button class="button" id="returnbooks">Return</button>
+    </div>
+    <div class="container" id="homepage">
+        <button class="button" id="books">Books</button>
+        <button class="button" id="students">Students</button>
+        <button class="button" id="issue/return">Issue/Return</button>
+    </div>
+    <script src="homepage.js"></script>
+</body>
+</html>

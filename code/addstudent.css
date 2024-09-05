@@ -1,0 +1,103 @@
+/* addbook.css */
+
+/* Style for the container */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+body {
+    background-image: url(./assets/background.png), linear-gradient(to bottom, #071522 0, black 130vh);
+  }
+.container {
+    width: 500px;
+    height: 790px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff48;
+}
+label{
+    color: rgb(255, 255, 255);
+
+}
+/* Style for input groups */
+.input-group {
+    margin-bottom: 35px;
+}
+
+/* Style for icons */
+.input-group i {
+    padding: 10px;
+    background-color: #1b1515;
+    color: #000000;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Style for labels */
+.input-group label {
+    display: inline-block;
+    width: 70px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Style for text inputs */
+.input-group input[type="text"],
+.input-group select {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+}
+.input-group input[type="number"],
+.input-group select {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+}
+.input-group input[type="tel"],
+.input-group select {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+}
+
+/* Style for submit button */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for status select */
+.input-group select {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    appearance: none; /* Removes default appearance */
+    -webkit-appearance: none; /* For older versions of Chrome and Safari */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z" /></svg>'); /* Adds custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* Hover style for status select */
+.input-group select:hover {
+    border-color: #888;
+}
