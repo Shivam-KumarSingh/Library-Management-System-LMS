@@ -9,26 +9,22 @@
 <ul>
     <li><a href="#features">Features</a></li>
     <li><a href="#technology-stack">Technology Stack</a></li>
-    <li><a href="#database-structure">Database Structure</a></li>
     <li><a href="#installation-instructions">Installation Instructions</a></li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
 </ul>
 
 <h2 id="features">Features</h2>
 
 <h3>1. User Management</h3>
 <ul>
-    <li><strong>Multi-role Support:</strong> Administrator, Librarian, and Student roles with customized permissions.</li>
+    <li><strong>User Management:</strong> Registration, login, and profile management</li>
     <li><strong>User Profile:</strong> Manage and update personal user information.</li>
 </ul>
 
 <h3>2. Authentication & Authorization</h3>
 <ul>
     <li><strong>Secure Login:</strong> Password encryption and session management for secure access.</li>
-    <li><strong>Role-based Authorization:</strong> Different dashboards and privileges based on user roles.</li>
 </ul>
 
 <h3>3. Book Management</h3>
@@ -52,12 +48,7 @@
     <li><strong>Web Server:</strong> XAMPP (Apache, MySQL, PHP)</li>
 </ul>
 
-<h2 id="database-structure">Database Structure</h2>
-<ul>
-    <li><strong>Users Table:</strong> Stores user details and roles (Admin, Librarian, Student).</li>
-    <li><strong>Books Table:</strong> Stores book information including ISBN, title, author, and status (available/borrowed).</li>
-    <li><strong>Transactions Table:</strong> Records all book issuances and returns along with due dates and fines.</li>
-</ul>
+
 
 <h2 id="installation-instructions">Installation Instructions</h2>
 
@@ -65,12 +56,11 @@
 <ol>
     <li>Install <a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a> for Apache and MySQL.</li>
     <li>Clone the repository:
-        <pre><code>git clone https://github.com/yourusername/library-management-system.git</code></pre>
+        <pre><code>git clone git clone https://github.com/Shivam-KumarSingh/library-management-system.git</code></pre>
     </li>
-    <li>Import the SQL file into MySQL:
+    <li>Create a MySQL database
         <ul>
             <li>Go to <code>phpMyAdmin</code> and create a database.</li>
-            <li>Import the provided <code>library_db.sql</code> file into the database.</li>
         </ul>
     </li>
     <li>Configure the database connection in the <code>config.php</code> file with your local database credentials.</li>
@@ -99,9 +89,6 @@
     <li><strong>User Profiles:</strong> Admin can add new users and assign roles.</li>
 </ul>
 
-<h2 id="screenshots">Screenshots</h2>
-<p>Add project screenshots here to showcase key functionalities such as the dashboard, search feature, and book issue/return flow.</p>
-
 <h2 id="contributing">Contributing</h2>
 
 <p>We welcome contributions! To contribute:</p>
@@ -119,13 +106,9 @@
     <li>Open a pull request.</li>
 </ol>
 
-<h2 id="license">License</h2>
-
-<p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for more details.</p>
-
 <h2 id="contact">Contact</h2>
 
-<p>Feel free to reach out if you have any questions or suggestions. You can contact us at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+<p>Feel free to reach out if you have any questions or suggestions. You can contact us at <a href="meshivam27@gmail.com">meshivam27@gmail.com</a>.</p>
 
 </body>
 </html>
